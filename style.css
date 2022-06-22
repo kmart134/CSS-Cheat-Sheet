@@ -1,0 +1,64 @@
+body {
+    background: rgb(87, 85, 85);
+}
+
+main {
+    display:flex;
+    flex-wrap:wrap;
+}
+
+section{
+    display: grid;
+    grid-template-columns:repeat(3,1fr);
+}
+
+.code-box {
+    border: dashed 1px white;
+    padding: 30px;
+    margin:15px;
+    /* width: 33%; */
+    /* flex-wrap: wrap; */
+    color: rgb(199,95,199);
+    position: relative;
+    border-radius: 10px;
+}
+
+.code-box:hover, .code-box:hover .box-header{
+    box-shadow: 0px 0px 8px
+    rgb(199,95,199), 0 0 15px
+
+}
+
+.box-header {
+    position: absolute;
+    top: -12px;
+    left: 91px;
+    border: 1px white solid;
+    background-color: gray;
+}
+
+.description-box{
+    position:relative;
+    margin:10px;
+}
+
+pre {
+    color: white;
+    margin:10px;
+    border-radius:8px;
+    background: linear-gradient(64deg,  rgb(190, 56, 190),#402240 );
+}
+
+
+
+
+@margin screen and(maxwidth: 992px) {
+    .code-box{}
+    width 50%
+
+}
+ @media screen and (max-width: 768px){
+    .code-box{
+        width:100%
+    }
+ } 
